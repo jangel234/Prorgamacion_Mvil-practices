@@ -1,0 +1,12 @@
+.list-seo-links {
+    font-size: 8px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    color: rgb(101, 101, 101);
+}
+
+.list-seo-links {
+    list-style: none;
+    text-decoration: none;
+}
