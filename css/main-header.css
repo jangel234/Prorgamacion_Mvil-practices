@@ -1,0 +1,142 @@
+/* === CONTENEDOR PRINCIPAL === */
+.main-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* === BLOQUE IZQUIERDO === */
+.main-site-highlights {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+.highlight-item img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+}
+
+.highlight-item.cuidate img {
+    border-radius: 50%;
+}
+
+/* === LOGO CENTRAL === */
+.main-site-logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* === BLOQUE DERECHO === */
+.tools-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Idioma */
+.edition-selector_btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.edition-selector_btn img {
+    width: 20px;
+    height: 14px;
+}
+
+/* CLUB MARCA */
+.marca-club {
+    background-color: white;
+    border: 2px solid orange;
+    padding: 5px 12px;
+    font-weight: bold;
+    color: #ff3c00;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Login */
+.login-btn {
+    padding: 5px 12px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* Ícono SVG */
+.icon-down {
+    margin-top: 2px;
+}
+
+
+/* === BARRA ROJA DE NAVEGACIÓN === */
+.main-navbar {
+    background-color: #c00;
+}
+
+.navbar-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* CENTRADO HORIZONTAL */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    flex-wrap: wrap;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+}
+
+.nav-menu li a:hover {
+    opacity: 0.8;
+}
