@@ -1,13 +1,11 @@
 /* Barra superior estilo MARCA (compacta) */
 .seo-links-container {
   background: #fff;
-  border-bottom: 1px solid #ddd;
   font-size: 12px; /* más pequeño */
-  line-height: 1.2;
   white-space: nowrap;
   position: relative;
   overflow: hidden;
-  height: 32px; /* altura reducida */
+  height: 20px; /* altura reducida */
 }
 
 .seo-links-container .slider-viewport {

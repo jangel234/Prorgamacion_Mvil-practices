@@ -27,9 +27,10 @@
 }
 
 .highlight-item img {
-    width: 28px;
-    height: 28px;
-    object-fit: cover;
+    width: auto;
+    height: 32px;      /* Íconos un poco más pequeños */
+    object-fit: contain;
+    display: block;
 }
 
 .highlight-item.cuidate img {
@@ -38,10 +39,9 @@
 
 /* === LOGO CENTRAL === */
 .main-site-logo img {
-    width: 120px;
+    width: 150px; /* aumentado tamaño del logo */
     height: auto;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
 }
 
 /* === BLOQUE DERECHO === */
@@ -99,7 +99,6 @@
     margin-top: 2px;
 }
 
-
 /* === BARRA ROJA DE NAVEGACIÓN === */
 .main-navbar {
     background-color: #c00;
@@ -140,3 +139,27 @@
 .nav-menu li a:hover {
     opacity: 0.8;
 }
+
+.highlight-item.radio-marca {
+    position: relative;
+    padding: 0 12px; /* espacio para las líneas */
+}
+
+.highlight-item.radio-marca::before,
+.highlight-item.radio-marca::after {
+    content: "";
+    position: absolute;
+    top: 15%;     /* menos espacio arriba, línea más alta */
+    bottom: 15%;  /* menos espacio abajo, línea más alta */
+    width: 1px;
+    background-color: #ccc;
+}
+
+.highlight-item.radio-marca::before {
+    left: 0;
+}
+
+.highlight-item.radio-marca::after {
+    right: 0;
+}
+
