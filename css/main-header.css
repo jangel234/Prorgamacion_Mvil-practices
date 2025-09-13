@@ -163,3 +163,90 @@
     right: 0;
 }
 
+
+/*equipos*/
+ 
+/* === NAVBAR DE EQUIPOS (ESCUDOS) === */
+.navbar-teams {
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0;
+}
+
+.navbar-container-teams {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1px;
+    flex-wrap: wrap;
+}
+
+.nav-team li {
+    flex: 0 0 auto;
+}
+
+.nav-team li a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-team li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-team li img {
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Hover opcional */
+.nav-team li img:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-team {
+        gap: 8px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .navbar-container-teams {
+        justify-content: flex-start;
+        padding: 0 10px;
+    }
+
+    .nav-team li a {
+        width: 32px;
+        height: 32px;
+    }
+
+    .nav-team li img {
+        max-width: 28px;
+        max-height: 28px;
+    }
+}
