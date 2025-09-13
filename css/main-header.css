@@ -51,6 +51,17 @@
     gap: 10px;
 }
 
+.iconsvg-down-a {
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M1 1l4 4 4-4" stroke="%23999" stroke-width="1.5" fill="none" fill-rule="evenodd"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 5px;
+}
+
 /* Idioma */
 .edition-selector_btn {
     display: flex;
@@ -94,10 +105,7 @@
     font-size: 13px;
 }
 
-/* Ícono SVG */
-.icon-down {
-    margin-top: 2px;
-}
+
 
 /* === BARRA ROJA DE NAVEGACIÓN === */
 .main-navbar {
@@ -109,6 +117,19 @@
     margin: 0 auto;
     padding: 0 30px;
 }
+
+.iconsvg-down-nav {
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    margin-left: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23ffffff' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
 
 /* Menú de navegación */
 .nav-menu {
