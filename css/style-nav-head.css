@@ -1,12 +1,67 @@
-.list-seo-links {
-    font-size: 8px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    color: rgb(101, 101, 101);
+/* Barra superior estilo MARCA (compacta) */
+.seo-links-container {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px; /* más pequeño */
+  line-height: 1.2;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  height: 32px; /* altura reducida */
+}
+
+.seo-links-container .slider-viewport {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+.seo-links-container .slider-viewport::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 .list-seo-links {
-    list-style: none;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 6px 8px; /* menos espacio */
+  margin: 0;
+  list-style: none;
+}
+
+.list-seo-links li {
+  margin-right: 12px; /* separación más corta */
+}
+
+.list-seo-links li span {
+  font-weight: bold;
+  color: #000;
+}
+
+.list-seo-links li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.list-seo-links li a:hover {
+  color: #e30613; /* rojo MARCA */
+}
+
+/* Gradientes laterales */
+.gradient-left, 
+.gradient-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px; /* más estrechos */
+  pointer-events: none;
+}
+
+.gradient-left {
+  left: 0;
+  background: linear-gradient(to right, #fff 70%, transparent);
+}
+
+.gradient-right {
+  right: 0;
+  background: linear-gradient(to left, #fff 70%, transparent);
 }
