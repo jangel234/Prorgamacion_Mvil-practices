@@ -40,9 +40,6 @@
   transition: color 0.2s;
 }
 
-.list-seo-links li a:hover {
-  color: #e30613; /* rojo MARCA */
-}
 
 /* Gradientes laterales */
 .gradient-left, 
