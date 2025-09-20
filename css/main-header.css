@@ -147,8 +147,13 @@
     margin: 0 15px;
 }
 
-.nav-menu li a {
+.txt-wh {
     color: white;
+}
+.txt-wh :hover {
+    color: rgb(185, 185, 185);
+}
+.nav-menu li a {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -156,9 +161,15 @@
     white-space: nowrap;
     transition: opacity 0.2s ease;
 }
+.nav-menu #mi-div {
+    display: flex;
+    background-color: rgb(167, 0, 0);
+    height: 100%;
+    align-items: center;
+}
 
 .nav-menu li a:hover {
-    opacity: 0.8;
+    color: #c0c0c0;
 }
 
 .highlight-item.radio-marca {
@@ -233,9 +244,6 @@
     height: 100%;
     object-fit: contain;
     display: block;
-}
-
-.nav-team li img {
     border-radius: 0;
     padding: 0;
     margin: 0;
@@ -271,3 +279,25 @@
         max-height: 28px;
     }
 }
+
+#mas-menu-container {
+    position: relative; 
+}
+
+#mas-menu-content {
+    display: none;
+    position: absolute; 
+    top: 100%;
+    right: 0; 
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    z-index: 1000; 
+    width: 600px;
+    color: #000;
+}
+
+#mas-menu-content.is-visible {
+    display: block;
+}
+
