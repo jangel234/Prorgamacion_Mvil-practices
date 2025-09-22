@@ -67,20 +67,82 @@
 FUNCIONALIDAD SCROLL Y HAMBURGUESA
 ====================================
 */
-.sticky-navbar { background-color: #333; color: white; position: fixed; top: -80px; left: 0; width: 100%; z-index: 1000; display: flex; align-items: center; transition: top 0.4s ease-in-out; }
-.sticky-navbar.visible { top: 0; }
-.sticky-logo { background-color: #c00; font-size: 24px; font-weight: bold;}
-.hamburger-btn { display: none; background: none; border: none; color: white; font-size: 28px; cursor: pointer; }
-.hamburger-btn:focus { outline: none; }
+/* NAVBAR PRINCIPAL */
+/* NAVBAR PRINCIPAL */
+.sticky-navbar {
+  background-color: #fff; /* fondo blanco */
+  color: #000;
+  position: fixed;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 
-/*
-================================================
-MEDIA QUERY: La magia para pantallas pequeñas
-================================================
-*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: top 0.4s ease-in-out;
+}
+
+/* Navbar visible al hacer scroll */
+.sticky-navbar.visible {
+  top: 0;
+}
+
+/* LOGO ESTILO MARCA */
+.sticky-logo {
+  background-color: #c00;
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial Black", sans-serif;
+
+  transform: skew(-10deg); /* efecto inclinado */
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.sticky-logo span {
+  transform: skew(10deg); /* endereza la "M" */
+  display: inline-block;
+}
+
+/* BOTÓN HAMBURGUESA */
+.hamburger-btn {
+  background: none;
+  border: 2px solid #c00;
+  color: #c00;
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hamburger-btn:hover {
+  background-color: #c00;
+  color: white;
+}
+
 @media (max-width: 992px) {
+  .navbar-teams {
+    display: none; /* Oculta el botón en pantallas grandes */
+  }
+}
+
+
+@media (max-width: 900px) {
     /* Ocultamos las barras extra */
-    .seo-links-container, .navbar-teams, .main-header {
+    .seo-links-container, .main-header {
         display: none; /* NUEVO: Oculta la barra de noticias y la de equipos */
     }
 
@@ -119,3 +181,50 @@ MEDIA QUERY: La magia para pantallas pequeñas
     }
 }
 
+/* NAVBAR ROJO (solo para móvil) */
+.mobile-navbar {
+  background-color: #c00; /* Rojo */
+  color: white;
+  display: none; /* Oculto en escritorio */
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 10px;
+}
+
+/* BOTÓN HAMBURGUESA */
+#hamburger-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#hamburger-btn:focus {
+  outline: none;
+}
+
+/* LOGO M A LA DERECHA */
+.mobile-logo {
+  background-color: #fff;
+  color: #c00;
+  font-size: 22px;
+  font-weight: 900;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial Black", sans-serif;
+  text-transform: uppercase;
+  transform: skew(-10deg);
+  user-select: none;
+}
+
+
+/* Mostrar solo en pantallas pequeñas */
+@media (max-width: 900px) {
+  .mobile-navbar {
+    display: flex;
+  }
+}
