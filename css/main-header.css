@@ -198,87 +198,79 @@
 
 /*equipos*/
  
-/* === NAVBAR DE EQUIPOS (ESCUDOS) === */
+/* === NAVBAR DE EQUIPOS (BASE PARA ESCRITORIO) === */
 .navbar-teams {
-    background-color: #f2f2f2;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 6px 0;
+  background-color: #f2f2f2;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 6px 0;
 }
 
 .navbar-container-teams {
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Centrado en pantallas grandes */
 }
 
 .nav-team {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 1px;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1px;
+  flex-wrap: wrap; /* Los equipos se ajustan en varias líneas en pantallas grandes */
+  justify-content: center;
 }
 
 .nav-team li {
-    flex: 0 0 auto;
+  flex-shrink: 0; /* Evita que los logos se encojan */
 }
 
 .nav-team li a {
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
 }
 
+.nav-team li a:hover {
+  transform: scale(1.05);
+}
 
 .nav-team li img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-/* Hover opcional */
-.nav-team li img:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
+
+/* === COMPORTAMIENTO RESPONSIVE === */
+
+/* 1. Cuando la pantalla es de 992px o menos, activamos el scroll horizontal */
+@media (max-width: 992px) {
+  .navbar-container-teams {
+    justify-content: flex-start; /* Alineamos al inicio para que el scroll comience desde la izquierda */
+    padding: 0 10px; /* Añadimos un poco de espacio lateral */
+  }
+
+  .nav-team {
+    flex-wrap: nowrap;  /* Forzamos todo a una sola línea */
+    overflow-x: auto;   /* Activamos el scroll horizontal */
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch; /* Scroll más suave en iOS */
+  }
+
+  /* Opcional: Ocultamos la barra de scroll visualmente */
+  .nav-team::-webkit-scrollbar { display: none; }
+  .nav-team { -ms-overflow-style: none; scrollbar-width: none; }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-team {
-        gap: 8px;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-    }
+/* 2. Cuando la pantalla es de 800px o menos, ocultamos toda la barra */
 
-    .navbar-container-teams {
-        justify-content: flex-start;
-        padding: 0 10px;
-    }
-
-    .nav-team li a {
-        width: 32px;
-        height: 32px;
-    }
-
-    .nav-team li img {
-        max-width: 28px;
-        max-height: 28px;
-    }
-}
 
 #mas-menu-container {
     position: relative; 

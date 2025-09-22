@@ -133,11 +133,6 @@ FUNCIONALIDAD SCROLL Y HAMBURGUESA
   color: white;
 }
 
-@media (max-width: 992px) {
-  .navbar-teams {
-    display: none; /* Oculta el botón en pantallas grandes */
-  }
-}
 
 
 @media (max-width: 900px) {
