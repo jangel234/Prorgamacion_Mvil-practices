@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="./css/style-content-and-footer.css">
     <link rel="stylesheet" href="./css/ads.css">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Resultados deportivos en directo hoy y proximas competiciones</title>
 </head>
 
 <body class="row">
-  <div class="overlay" id="overlay"></div>
+    <div class="overlay" id="overlay"></div>
     <div class="sticky-navbar" id="sticky-nav">
         <div class="sticky-logo"><span>M</span></div>
         <button class="hamburger-btn" id="sticky-burguer" aria-label="Menú">&#9776;</button>
@@ -28,28 +28,28 @@
     </nav>
 
 
-<!-- MENÚ LATERAL -->
-<nav class="side-menu" id="side-menu">
-  <div class="menu-header">
-    <div class="menu-logo">MARCA</div>
-    <button class="close-btn" id="close-btn">&times;</button>
-  </div>
+    <!-- MENÚ LATERAL -->
+    <nav class="side-menu" id="side-menu">
+        <div class="menu-header">
+            <div class="menu-logo">MARCA</div>
+            <button class="close-btn" id="close-btn">&times;</button>
+        </div>
 
-  <ul class="menu-links">
-    <li><a href="#">Fútbol</a></li>
-    <li><a href="#">Equipos</a></li>
-    <li><a href="#">Baloncesto</a></li>
-    <li><a href="#">Motor</a></li>
-    <li><a href="#">Polideportivo</a></li>
-    <li><a href="#">Coches</a></li>
-    <li><a href="#">ULTIMA HORA</a></li>
-    <li><a href="#">FANTASY</a></li>
-    <li><a href="#">AGENDA TV </a></li>
-    <li class="login-link"><a href="#">INICIAR SESIÓN</a></li>
-  </ul>
-</nav>
+        <ul class="menu-links">
+            <li><a href="#">Fútbol</a></li>
+            <li><a href="#">Equipos</a></li>
+            <li><a href="#">Baloncesto</a></li>
+            <li><a href="#">Motor</a></li>
+            <li><a href="#">Polideportivo</a></li>
+            <li><a href="#">Coches</a></li>
+            <li><a href="#">ULTIMA HORA</a></li>
+            <li><a href="#">FANTASY</a></li>
+            <li><a href="#">AGENDA TV </a></li>
+            <li class="login-link"><a href="#">INICIAR SESIÓN</a></li>
+        </ul>
+    </nav>
 
-        
+
     <section class="js_slider_container seo-links-container">
         <div class="container js_slider_viewport slider-viewport">
             <ul class="list-seo-links horizontal">
@@ -356,6 +356,244 @@
 
                 <div class="main-content">
                     <!-- contenido cecntral -->
+                    <!-- Carrusel de resultados -->
+                    <div class="container my-4">
+                        <div class="row g-4">
+                            <main class="col-12">
+
+                                <div class="results-carousel-wrapper mt-5">
+                                    <div class="carousel-header">
+                                        <div class="results-filter">
+                                            <strong>Resultados:</strong>
+                                        </div>
+                                        <div class="league-title">PREMIER LEAGUE</div>
+                                        <a href="#" class="view-all-link">Ver todo &rsaquo;</a>
+                                    </div>
+
+                                    <div id="sportsCarousel" class="carousel slide" data-bs-interval="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="row gx-2">
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/alaves.png"
+                                                                    alt="Bournemouth" class="team-logo">
+                                                                <span class="team-name">Alaves</span>
+                                                                <span class="team-score">0</span>
+                                                            </div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/athletic.png"
+                                                                    alt="Newcastle" class="team-logo">
+                                                                <span class="team-name">Athletic</span>
+                                                                <span class="team-score">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/atlmadrid.png"
+                                                                    alt="Sunderland" class="team-logo">
+                                                                <span class="team-name">Atletico Madrid</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/barcelona.png"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Barcelona</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/Arsenal.png" alt="Arsenal"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Arsenal</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/Manchester_City.png"
+                                                                    alt="M. City" class="team-logo">
+                                                                <span class="team-name">M. City</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/betis.png" alt="Arsenal"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Betis</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/celta.png" alt="M. City"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Celta</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row gx-2">
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/elche.png" alt="Bournemouth"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Elche</span>
+                                                                <span class="team-score">0</span>
+                                                            </div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/espanyol.png"
+                                                                    alt="Newcastle" class="team-logo">
+                                                                <span class="team-name">Espanyol</span>
+                                                                <span class="team-score">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/getafe.png" alt="Sunderland"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Getafe</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/girona.png"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Girona</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/levante.png"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Levante</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/mallorca.png"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Mallorca</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team"><span>Equipo Random</span><strong
+                                                                    class="ms-auto">5</strong></div>
+                                                            <div class="team"><span>Otro Equipo</span><strong
+                                                                    class="ms-auto">3</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row gx-2">
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/elche.png" alt="Bournemouth"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Elche</span>
+                                                                <span class="team-score">0</span>
+                                                            </div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/espanyol.png"
+                                                                    alt="Newcastle" class="team-logo">
+                                                                <span class="team-name">Espanyol</span>
+                                                                <span class="team-score">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/getafe.png" alt="Sunderland"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Getafe</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/girona.png"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Girona</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/levante.png"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Levante</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                            <div class="team">
+                                                                <img src="./imgs/p4/equipos/mallorca.png"
+                                                                    class="team-logo">
+                                                                <span class="team-name">Mallorca</span>
+                                                                <span class="team-score">1</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3">
+                                                        <div class="match-card">
+                                                            <div class="match-status">Finalizado</div>
+                                                            <div class="team"><span>Equipo Random</span><strong
+                                                                    class="ms-auto">5</strong></div>
+                                                            <div class="team"><span>Otro Equipo</span><strong
+                                                                    class="ms-auto">3</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#sportsCarousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#sportsCarousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </main>
+
+                        </div>
+                    </div>
+                    <!-- cards -->
                     <div class="news-grid container row">
                         <article class="news-card col-12 col-md-5 col-lg-3 col-xl-3 col-xxl-2">
                             <a href="#" class="card-link">
@@ -539,7 +777,7 @@
                             </a>
                         </article>
 
-                        <article class="news-card col-12 col-md-5 col-lg-3 col-xl-2">
+                        <article class="news-card col-12 col-md-5 col-lg-3 col-xl-3 col-xxl-5">
                             <a href="https://www.marca.com/regalos-promociones/2025/09/20/68caa642ca47410f578b45e9.html"
                                 class="card-link">
                                 <figure class="card-figure">
@@ -559,7 +797,7 @@
                             </a>
                         </article>
 
-                        <article class="news-card col-12 col-md-5 col-lg-3 col-xl-2">
+                        <article class="news-card col-12 col-md-5 col-lg-3 col-xl-3 col-xxl-5">
                             <a href="https://cuidateplus.marca.com/alimentacion/nutricion/2025/09/19/picos-o-pan-engorda-mas-183860.html"
                                 class="card-link">
                                 <figure class="card-figure">
@@ -577,6 +815,103 @@
                                 </div>
                             </a>
                         </article>
+                    </div>
+                    <!-- Contenido inferior -->
+                    <div class="news-grid container row">
+                        <!-- Otro contenido -->
+                        <div class="container my-4">
+                            <div class="row g-4">
+                                <div class="col-12 col-lg-8">
+                                    <article class="featured-article">
+                                        <a href="[URL_DE_LA_NOTICIA]" class="article-link">
+                                            <figure class="featured-image">
+                                                <img src="https://e01-xlk-ue-marca.uecdn.es/files/headlines_featured_1310/uploads/2025/09/21/68d069ccce4ad.jpeg"
+                                                    alt="Ferran Torres celebrando un gol">
+                                                <div class="icon-play"></div>
+                                            </figure>
+
+                                            <div class="featured-body">
+                                                <span class="article-kicker">BARCELONA 3-0 GETAFE</span>
+                                                <h2 class="article-headline-main">Como Tiburón en el agua</h2>
+                                                <div class="article-byline">
+                                                    <span>LUIS F. ROJO</span>
+                                                    <span class="article-comments">269</span>
+                                                </div>
+                                                <div class="related-link">
+                                                    <a href="#">LaLiga EA Sports: Así está la clasificación</a>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <div class="match-scoreboard">
+                                            <span>Finalizado</span>
+                                            <div class="team">
+                                                <span>Barcelona</span>
+                                                <img src="[URL_LOGO_BARCA]" alt="Logo Barcelona">
+                                                <strong>3</strong>
+                                            </div>
+                                            <div class="team">
+                                                <strong>0</strong>
+                                                <img src="[URL_LOGO_GETAFE]" alt="Logo Getafe">
+                                                <span>Getafe</span>
+                                            </div>
+                                            <span>DAZN</span>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <div class="secondary-articles">
+                                        <article class="secondary-article">
+                                            <div class="article-body">
+                                                <span class="article-kicker">CONTRACRÓNICA</span>
+                                                <h3 class="article-headline-secondary"><a href="#">No va a haber quien
+                                                        pare el ego de
+                                                        este Barça</a></h3>
+                                                <div class="article-byline">
+                                                    <span>M. CARMEN TORRES</span>
+                                                    <span class="article-comments">147</span>
+                                                </div>
+                                            </div>
+                                            <a href="#"><img class="article-image-secondary"
+                                                    src="https://e01-xlk-ue-marca.uecdn.es/files/headlines_featured_286_square/uploads/2025/09/21/68d0515aaf47c.jpeg"
+                                                    alt="Ferran Torres"></a>
+                                        </article>
+
+                                        <article class="secondary-article">
+                                            <div class="article-body">
+                                                <span class="article-kicker">UNO A UNO</span>
+                                                <h3 class="article-headline-secondary"><a href="#">Lewandowski tiene un
+                                                        problema...</a>
+                                                </h3>
+                                                <div class="article-byline">
+                                                    <span>C. NAVARRO</span>
+                                                    <span class="article-comments">151</span>
+                                                </div>
+                                            </div>
+                                            <a href="#"><img class="article-image-secondary"
+                                                    src="https://e01-xlk-ue-marca.uecdn.es/files/headlines_featured_286_square/uploads/2025/09/21/68d054e29e4e6.jpeg"
+                                                    alt="Lewandowski"></a>
+                                        </article>
+
+                                        <article class="secondary-article">
+                                            <div class="article-body">
+                                                <span class="article-kicker">BARCELONA</span>
+                                                <h3 class="article-headline-secondary"><a href="#">Fermín enciende las
+                                                        alarmas</a></h3>
+                                                <div class="article-byline">
+                                                    <span>CRISTINA NAVARRO</span>
+                                                    <span class="article-comments">47</span>
+                                                </div>
+                                            </div>
+                                            <a href="#"><img class="article-image-secondary"
+                                                    src="https://e01-xlk-ue-marca.uecdn.es/files/headlines_featured_286_square/uploads/2025/09/22/68d0781224a24.jpeg"
+                                                    alt="Fermín"></a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
@@ -782,15 +1117,12 @@
     </footer>
 
 </body>
-<script src="/Prorgamacion_Mvil-practices/burguer.js"></script>
+<script src="./burguer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
 
 <script>
