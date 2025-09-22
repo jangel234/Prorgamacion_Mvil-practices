@@ -294,10 +294,122 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
     z-index: 1000; 
     width: 600px;
-    color: #000;
+    color: #000 !important;
+
 }
 
 #mas-menu-content.is-visible {
     display: block;
 }
 
+.main-nav a{
+    color:#000;
+}
+.main-nav li::marker{
+    display: none;
+}
+.more-menu-list li ul li a{
+    color: black;
+}
+ul {
+    list-style: none;
+}
+
+.more-menu-list-links li a {
+    color:#000
+}
+
+/* --- Variables de Estilo (para personalizar fácilmente) --- */
+:root {
+    --text-color-dark: #333;
+    --text-color-light: #555;
+    --text-color-red: #c80000;
+    --hover-bg-color: #c80000; /* Color rojo para el fondo en hover */
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- Contenedor Principal (el div que envuelve todo) --- */
+.corporative-container { /* Añade esta clase a tu div principal */
+    font-family: var(--font-family);
+    padding: 20px;
+    background-color: #f0f0f0; /* Fondo gris claro como en la imagen */
+}
+
+/* --- Título de la Sección --- */
+.super-menu-column-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-color-light);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.super-menu-column-title strong {
+    color: var(--text-color-dark);
+}
+
+/* --- Cuadrícula de Enlaces --- */
+.corporative-list {
+    display: grid;
+    gap: 20px; /* Espacio entre las tarjetas */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* --- Estilo de cada Tarjeta/Ítem --- */
+.corporative-item a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+    background-color: #f0f0f0; /* Fondo inicial igual al del contenedor */
+    
+    /* Transición suave para el cambio de color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- EFECTO :HOVER --- */
+/* Cuando el ratón pasa por encima del enlace */
+.corporative-item a:hover {
+    background-color: var(--hover-bg-color); /* El fondo se vuelve rojo */
+}
+
+/* Cuando el fondo es rojo, los textos deben cambiar de color */
+.corporative-item a:hover .corporative-header,
+.corporative-item a:hover .corporative-description {
+    color: #fff; /* El texto se vuelve blanco para ser legible */
+}
+
+/* --- Estilo de los Textos dentro de la Tarjeta --- */
+.corporative-header {
+    display: block;
+    font-size: 1.2rem; /* 19px aprox. */
+    font-weight: bold;
+    color: var(--text-color-red);
+    margin-bottom: 5px;
+    line-height: 1.3;
+    transition: color 0.3s ease; /* Transición para el texto */
+}
+
+.corporative-description {
+    display: block;
+    font-size: 0.9rem; /* 14px aprox. */
+    color: var(--text-color-dark);
+    line-height: 1.4;
+    transition: color 0.3s ease; /* Transición para el texto */
+}
+
+/* --- Diseño Responsivo --- */
+/* En pantallas más pequeñas, se apila en una sola columna */
+@media (max-width: 768px) {
+    .corporative-list {
+        grid-template-columns: 1fr; /* 1 columna en tablets y móviles */
+    }
+}
+
+.more-menu-newsletter-title a {
+    color:black;
+}
